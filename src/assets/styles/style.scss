@@ -1,0 +1,71 @@
+/*------------------------------------------------------------------
+ [Master Stylesheet]
+
+  Project:	Marshmello Admin
+  Version:	1.0.0
+-------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------
+  ===== Table of Contents =====
+
+  * Bootstrap functions
+  * Template variables
+  * SCSS Compass Functions
+  * Boostrap Main SCSS
+  * Core Styles
+    + Reset Styles
+    + Fonts
+    + Navbar
+    + Typography
+    + Footer
+  * Components
+    + Buttons
+    + Checkboxes and Radios
+    + Forms
+    + owl carousel
+    + jquery flipster
+-------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------*/
+/* === Import Bootstrap functions and variables === */
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+/*-------------------------------------------------------------------*/
+/* === Import template variables === */
+@import "variables";
+
+/*-------------------------------------------------------------------*/
+/* === SCSS Compass Functions === */
+@import "~compass-mixins/lib/compass";
+@import "~compass-mixins/lib/animate";
+
+/*-------------------------------------------------------------------*/
+/* === Boostrap Main SCSS === */
+@import "~bootstrap/scss/bootstrap";
+
+/*-------------------------------------------------------------------*/
+/* === Slick Slider SCSS === */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+/*-------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------*/
+/* === Core Styles === */
+@import "reset";
+@import "fonts";
+@import "typography";
+@import "footer";
+@import "navbar";
+@import "main";
+@import "testimonial";
+@import "pricing";
+
+/*-------------------------------------------------------------------*/
+/* === Components === */
+@import "components/buttons";
+@import "components/forms";
+@import "components/toggle-switch";
+@import "components/owl-carousel";
+@import "components/flipster";
