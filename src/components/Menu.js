@@ -1,14 +1,7 @@
 import React, { useState } from "react"
 import logo from "../assets/images/logo.svg"
 import logoDark from "../assets/images/logo-dark.svg"
-
-const NavItem = ({ children, ...aProps }) => (
-  <li className="nav-item active">
-    <a className="nav-link" {...aProps}>
-      {children}
-    </a>
-  </li>
-)
+import NavItems from "./NavItems"
 
 export default function Menu() {
   const [show, setShow] = useState(false)
@@ -17,15 +10,7 @@ export default function Menu() {
     setShow(!show)
   }
 
-  function onNavigate(e) {
-    e.preventDefault()
-    const target = e.target.getAttribute("href")
-    const elem = document.querySelector(target)
-    if (elem) {
-      elem.scrollIntoView({
-        behavior: "smooth",
-      })
-    }
+  function onNavigate() {
     setShow(false)
   }
 
@@ -34,7 +19,7 @@ export default function Menu() {
       <div id="mobile-menu-overlay" />
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="#home">
             <img src={logo} alt="Marshmallow" />
           </a>
           <button
@@ -51,42 +36,12 @@ export default function Menu() {
           <div className={`collapse navbar-collapse${show ? " show" : ""}`}>
             <div className="d-lg-none d-flex justify-content-between px-4 py-3 align-items-center">
               <img src={logoDark} className="logo-mobile-menu" alt="logo" />
-              <a className="close-menu" onClick={toggleMenu}>
+              <button className="close-menu" onClick={toggleMenu}>
                 <i className="mdi mdi-close" />
-              </a>
+              </button>
             </div>
             <ul className="navbar-nav ml-auto align-items-center">
-              <NavItem href="#home" onClick={onNavigate}>
-                Home
-              </NavItem>
-
-              <NavItem href="#services" onClick={onNavigate}>
-                Services
-              </NavItem>
-
-              <NavItem href="#about" onClick={onNavigate}>
-                About
-              </NavItem>
-
-              <NavItem href="#projects" onClick={onNavigate}>
-                Projects
-              </NavItem>
-
-              <NavItem href="#testimonial" onClick={onNavigate}>
-                Testimonial
-              </NavItem>
-              <NavItem href="#plans" onClick={onNavigate}>
-                Plans
-              </NavItem>
-              <li className="nav-item">
-                <a
-                  className="nav-link btn btn-success"
-                  href="#contact"
-                  onClick={onNavigate}
-                >
-                  174-394-9560
-                </a>
-              </li>
+              <NavItems />
             </ul>
           </div>
         </div>
