@@ -9,8 +9,6 @@
 
 A simple Landing Page starter for your next Gatsby.js project.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
-
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**

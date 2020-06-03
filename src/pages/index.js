@@ -17,11 +17,6 @@ import Pricing from "../components/Pricing"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 
-// TODOs:
-// - CMS: Tina, NetlifyCMS, ...
-// - Port to NextJS
-// - Write README
-
 export default function Index() {
   useEffect(() => {
     ;(async () => {
