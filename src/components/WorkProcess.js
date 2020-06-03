@@ -1,9 +1,27 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import tick from "../assets/images/tick.png"
 import idea from "../assets/images/idea.png"
 
 export default function WorkProcess() {
+  const {
+    file: {
+      childImageSharp: { fluid: illustration },
+    },
+  } = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "idea.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <section className="our-process" id="about">
       <div className="container">
@@ -45,7 +63,7 @@ export default function WorkProcess() {
             data-aos-easing="ease-out-cubic"
             data-aos-duration={2000}
           >
-            <img src={idea} alt="idea" className="img-fluid" />
+            <Img fluid={illustration} alt="idea" className="img-fluid" />
           </div>
         </div>
       </div>

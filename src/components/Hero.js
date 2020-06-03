@@ -10,7 +10,7 @@ export default function Hero() {
           <div className="col-sm-12">
             <div className="main-banner">
               <div className="d-sm-flex justify-content-between">
-                <div data-aos="zoom-in-up">
+                <div>
                   <div className="banner-title">
                     <h3 className="font-weight-medium">
                       We Help Power Millions Of Businesses in 100+ Countries
@@ -28,12 +28,7 @@ export default function Hero() {
                   </button>
                 </div>
                 <div className="mt-5 mt-lg-0">
-                  <img
-                    src={group}
-                    alt="marsmello"
-                    className="img-fluid"
-                    data-aos="zoom-in-up"
-                  />
+                  <img src={group} alt="marsmello" className="img-fluid" />
                 </div>
               </div>
             </div>

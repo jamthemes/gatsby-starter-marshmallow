@@ -1,17 +1,30 @@
 import React from "react"
 import Slider from "react-slick"
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
 
-import slider1 from "../assets/images/carousel/slider1.jpg"
-import slider2 from "../assets/images/carousel/slider2.jpg"
-import slider3 from "../assets/images/carousel/slider3.jpg"
-import slider4 from "../assets/images/carousel/slider4.jpg"
-import slider5 from "../assets/images/carousel/slider5.jpg"
 import satisfiedClient from "../assets/images/satisfied-client.svg"
 import finishedProject from "../assets/images/finished-project.svg"
 import teamMembers from "../assets/images/team-members.svg"
 import ourBlogPosts from "../assets/images/our-blog-posts.svg"
 
 export default function Projects() {
+  const {
+    allFile: { nodes: images },
+  } = useStaticQuery(graphql`
+    query {
+      allFile(filter: { relativePath: { regex: "/carousel/*./" } }) {
+        nodes {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <section className="our-projects" id="projects">
       <div className="container">
@@ -35,6 +48,7 @@ export default function Projects() {
           dots={false}
           slidesToShow={4}
           className="owl-carousel-projects owl-carousel owl-theme"
+          lazyLoad
           responsive={[
             {
               breakpoint: 0,
@@ -56,51 +70,11 @@ export default function Projects() {
             },
           ]}
         >
-          <div className="item">
-            <img src={slider1} alt="slider" />
-          </div>
-          <div className="item">
-            <img src={slider2} alt="slider" />
-          </div>
-          <div className="item">
-            <img src={slider3} alt="slider" />
-          </div>
-          <div className="item">
-            <img src={slider4} alt="slider" />
-          </div>
-          <div className="item">
-            <img src={slider5} alt="slider" />
-          </div>
-          <div className="item">
-            <img src={slider1} alt="slider" />
-          </div>
-          <div className="item">
-            <img src={slider2} alt="slider" />
-          </div>
-          <div className="item">
-            <img src={slider3} alt="slider" />
-          </div>
-          <div className="item">
-            <img src={slider4} alt="slider" />
-          </div>
-          <div className="item">
-            <img src={slider5} alt="slider" />
-          </div>
-          <div className="item">
-            <img src={slider1} alt="slider" />
-          </div>
-          <div className="item">
-            <img src={slider2} alt="slider" />
-          </div>
-          <div className="item">
-            <img src={slider3} alt="slider" />
-          </div>
-          <div className="item">
-            <img src={slider4} alt="slider" />
-          </div>
-          <div className="item">
-            <img src={slider5} alt="slider" />
-          </div>
+          {images.map(image => (
+            <div className="item" key={image.id}>
+              <Img fluid={image.childImageSharp.fluid} alt="slider" />
+            </div>
+          ))}
         </Slider>
       </div>
       <div className="container">

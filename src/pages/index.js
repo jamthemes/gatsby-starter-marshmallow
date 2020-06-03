@@ -18,8 +18,12 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 
 // TODOs:
-// - Create Components
-// - CMS: Tina, Netlify, ...
+// - Lighthouse Score?
+//  - Use Gatsby Image
+// - SCSS Theming?
+// - CMS: Tina, NetlifyCMS, ...
+// - Port to NextJS
+// - Write README
 
 export default function Index() {
   useEffect(() => {
@@ -27,7 +31,7 @@ export default function Index() {
       if (typeof window !== undefined) {
         AOS.init({
           offset: 0,
-          duration: 800,
+          duration: 400,
           easing: "ease-in-quad",
           delay: 100,
         })

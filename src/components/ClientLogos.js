@@ -1,10 +1,10 @@
 import React from "react"
 
-import deloit from "../assets/images/deloit.svg"
-import erricson from "../assets/images/erricson.svg"
-import netflix from "../assets/images/netflix.svg"
-import instagram from "../assets/images/instagram.svg"
-import coinbase from "../assets/images/coinbase.svg"
+import deloit from "../assets/images/client-logos/deloit.svg"
+import erricson from "../assets/images/client-logos/erricson.svg"
+import netflix from "../assets/images/client-logos/netflix.svg"
+import instagram from "../assets/images/client-logos/instagram.svg"
+import coinbase from "../assets/images/client-logos/coinbase.svg"
 
 export default function ClientLogos() {
   return (

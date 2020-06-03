@@ -1,13 +1,35 @@
 import React from "react"
-import contact from "../assets/images/contact.jpg"
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
 
 export default function Contact() {
+  const {
+    file: {
+      childImageSharp: { fluid: contactImg },
+    },
+  } = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "contact.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <section className="contactus" id="contact">
       <div className="container">
         <div className="row mb-5 pb-5">
-          <div className="col-sm-5" data-aos="fade-up" data-aos-offset={-500}>
-            <img src={contact} alt="contact" className="img-fluid" />
+          <div
+            className="col-sm-5"
+            data-aos="fade-up"
+            data-aos-offset={-500}
+            style={{ maxWidth: "300px", marginRight: "2em" }}
+          >
+            <Img fluid={contactImg} alt="contact" className="img-fluid" />
           </div>
           <div className="col-sm-7" data-aos="fade-up" data-aos-offset={-500}>
             <h3 className="font-weight-medium text-dark mt-5 mt-lg-0">

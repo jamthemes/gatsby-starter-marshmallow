@@ -1,12 +1,39 @@
 import React from "react"
 import Slider from "react-slick"
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
 
-import testimonial1 from "../assets/images/testimonial/testimonial1.jpg"
-import testimonial2 from "../assets/images/testimonial/testimonial2.jpg"
-import testimonial3 from "../assets/images/testimonial/testimonial3.jpg"
-import testimonial4 from "../assets/images/testimonial/testimonial4.jpg"
+// import testimonial1 from "../assets/images/testimonial/testimonial1.jpg"
+// import testimonial2 from "../assets/images/testimonial/testimonial2.jpg"
+// import testimonial3 from "../assets/images/testimonial/testimonial3.jpg"
+// import testimonial4 from "../assets/images/testimonial/testimonial4.jpg"
 
 export default function Testimonials() {
+  const {
+    allFile: { nodes: testimonialImages },
+  } = useStaticQuery(graphql`
+    query {
+      allFile(filter: { relativePath: { regex: "/testimonial/*./" } }) {
+        nodes {
+          childImageSharp {
+            fixed(width: 100) {
+              src
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const [
+    testimonial1,
+    testimonial2,
+    testimonial3,
+    testimonial4,
+  ] = testimonialImages
+    .filter(img => img.childImageSharp)
+    .map(img => img.childImageSharp.fixed.src)
+
   return (
     <section className="testimonial" id="testimonial">
       <div className="container">
