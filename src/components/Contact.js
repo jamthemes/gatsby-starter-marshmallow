@@ -1,6 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
+import Fade from "react-reveal/Fade"
 
 export default function Contact() {
   const {
@@ -23,64 +24,66 @@ export default function Contact() {
     <section className="contactus" id="contact">
       <div className="container">
         <div className="row mb-5 pb-5">
-          <div
-            className="col-sm-5"
-            data-aos="fade-up"
-            data-aos-offset={-500}
-            style={{ maxWidth: "300px", marginRight: "2em" }}
-          >
-            <Img fluid={contactImg} alt="contact" className="img-fluid" />
-          </div>
-          <div className="col-sm-7" data-aos="fade-up" data-aos-offset={-500}>
-            <h3 className="font-weight-medium text-dark mt-5 mt-lg-0">
-              Got A Problem
-            </h3>
-            <h5 className="text-dark mb-5">
-              Lorem ipsum dolor sit amet, consectetur pretium
-            </h5>
-            <form>
-              <div className="row">
-                <div className="col-sm-6">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="name"
-                      placeholder="Name*"
-                      aria-label="Name"
-                    />
+          <Fade>
+            <div
+              className="col-sm-5"
+              style={{ maxWidth: "300px", marginRight: "2em" }}
+            >
+              <Img fluid={contactImg} alt="contact" className="img-fluid" />
+            </div>
+          </Fade>
+          <Fade>
+            <div className="col-sm-7">
+              <h3 className="font-weight-medium text-dark mt-5 mt-lg-0">
+                Got A Problem
+              </h3>
+              <h5 className="text-dark mb-5">
+                Lorem ipsum dolor sit amet, consectetur pretium
+              </h5>
+              <form>
+                <div className="row">
+                  <div className="col-sm-6">
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="name"
+                        placeholder="Name*"
+                        aria-label="Name"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-sm-6">
+                    <div className="form-group">
+                      <input
+                        type="email"
+                        className="form-control"
+                        id="mail"
+                        placeholder="Email*"
+                        aria-label="E-Mail address"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-sm-12">
+                    <div className="form-group">
+                      <textarea
+                        name="message"
+                        id="message"
+                        className="form-control"
+                        placeholder="Message*"
+                        rows={5}
+                        defaultValue={""}
+                        aria-label="Message"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-sm-12">
+                    <button className="btn btn-secondary">SEND</button>
                   </div>
                 </div>
-                <div className="col-sm-6">
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="mail"
-                      placeholder="Email*"
-                      aria-label="E-Mail address"
-                    />
-                  </div>
-                </div>
-                <div className="col-sm-12">
-                  <div className="form-group">
-                    <textarea
-                      name="message"
-                      id="message"
-                      className="form-control"
-                      placeholder="Message*"
-                      rows={5}
-                      defaultValue={""}
-                      aria-label="Message"
-                    />
-                  </div>
-                </div>
-                <div className="col-sm-12">
-                  <button className="btn btn-secondary">SEND</button>
-                </div>
-              </div>
-            </form>
-          </div>
+              </form>
+            </div>
+          </Fade>
         </div>
       </div>
     </section>
