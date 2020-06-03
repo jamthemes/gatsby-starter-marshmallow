@@ -118,6 +118,7 @@ export default function Footer() {
                   href="https://www.jamthemes.io/"
                   className="text-white"
                   target="_blank"
+                  rel="noopener"
                 >
                   JamThemes
                 </a>
@@ -126,6 +127,7 @@ export default function Footer() {
                   href="https://www.bootstrapdash.com/"
                   className="text-white"
                   target="_blank"
+                  rel="noopener"
                 >
                   BootstrapDash
                 </a>

@@ -81,9 +81,7 @@ export default function Pricing() {
                 <li>Idea for smaller professional websites</li>
                 <li>Web space</li>
               </ul>
-              <button href="#" className="btn btn-outline-primary">
-                Puchase Now
-              </button>
+              <button className="btn btn-outline-primary">Puchase Now</button>
             </div>
           </div>
         </div>

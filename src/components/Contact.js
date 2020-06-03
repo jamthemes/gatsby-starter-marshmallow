@@ -47,6 +47,7 @@ export default function Contact() {
                       className="form-control"
                       id="name"
                       placeholder="Name*"
+                      aria-label="Name"
                     />
                   </div>
                 </div>
@@ -57,6 +58,7 @@ export default function Contact() {
                       className="form-control"
                       id="mail"
                       placeholder="Email*"
+                      aria-label="E-Mail address"
                     />
                   </div>
                 </div>
@@ -69,6 +71,7 @@ export default function Contact() {
                       placeholder="Message*"
                       rows={5}
                       defaultValue={""}
+                      aria-label="Message"
                     />
                   </div>
                 </div>

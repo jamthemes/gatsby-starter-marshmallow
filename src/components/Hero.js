@@ -23,9 +23,7 @@ export default function Hero() {
                     Lorem Ipsum has been the industry's standard dummy text ever
                     since the 1500s,
                   </p>
-                  <button href="#" className="btn btn-secondary mt-3">
-                    Learn more
-                  </button>
+                  <button className="btn btn-secondary mt-3">Learn more</button>
                 </div>
                 <div className="mt-5 mt-lg-0">
                   <img
