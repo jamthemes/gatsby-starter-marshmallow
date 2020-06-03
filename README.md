@@ -34,13 +34,11 @@ A simple Landing Page starter for your next Gatsby.js project.
 
     Open the `my-new-site` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-## 🎓 Learning Gatsby
+## 🎓 FAQs
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+### 🆘 My site isn't correctly styled when built!
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+To reduce the size of the CSS, a plugin called (gatsby-plugin-purgecss)[https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/] is used, which tries to remove unused CSS. Sometimes it fails to correctly detect the use of styles and removed needed styles. If there are some styling issues in the built site, this plugin may be the reason.
 
 ## 💫 Deploy
 

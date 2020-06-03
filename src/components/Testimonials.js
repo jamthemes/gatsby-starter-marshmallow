@@ -1,12 +1,6 @@
 import React from "react"
 import Slider from "react-slick"
-import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
-
-// import testimonial1 from "../assets/images/testimonial/testimonial1.jpg"
-// import testimonial2 from "../assets/images/testimonial/testimonial2.jpg"
-// import testimonial3 from "../assets/images/testimonial/testimonial3.jpg"
-// import testimonial4 from "../assets/images/testimonial/testimonial4.jpg"
 
 export default function Testimonials() {
   const {
@@ -60,6 +54,7 @@ export default function Testimonials() {
                     src={testimonial1}
                     alt="icon"
                     className="testimonial-icons"
+                    loading="lazy"
                   />
                   <p>
                     Lorem ipsum dolor sit amet, consectetur pretium pretium
@@ -76,6 +71,7 @@ export default function Testimonials() {
                     src={testimonial2}
                     alt="icon"
                     className="testimonial-icons"
+                    loading="lazy"
                   />
                   <p>
                     Lorem ipsum dolor sit amet, consectetur pretium pretium
@@ -92,6 +88,7 @@ export default function Testimonials() {
                     src={testimonial3}
                     alt="icon"
                     className="testimonial-icons"
+                    loading="lazy"
                   />
                   <p>
                     Lorem ipsum dolor sit amet, consectetur pretium pretium
@@ -108,6 +105,7 @@ export default function Testimonials() {
                     src={testimonial4}
                     alt="icon"
                     className="testimonial-icons"
+                    loading="lazy"
                   />
                   <p>
                     Lorem ipsum dolor sit amet, consectetur pretium pretium

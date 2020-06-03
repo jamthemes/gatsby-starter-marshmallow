@@ -1,3 +1,4 @@
+/*! purgecss start ignore */
 .owl-carousel {
   .slick-slide {
     .item {
@@ -25,57 +26,4 @@
     border-radius: 19.5px;
   }
 }
-
-.owl-theme {
-  .owl-nav {
-    &.disabled {
-      + .owl-dots {
-        margin-top: 70px;
-        @media (max-width: 991px) {
-          margin-top: 10px;
-        }
-      }
-    }
-  }
-  .owl-dots {
-    margin-top: 70px;
-    .owl-dot {
-      span {
-        width: 18px;
-        height: 18px;
-        margin: 5px 7px;
-        background: $white;
-        display: block;
-        transition: opacity 0.2s ease;
-        border-radius: 3;
-        border: solid 2px theme-color(primary);
-      }
-      &.active,
-      &:hover {
-        span {
-          background: theme-color(primary);
-        }
-      }
-    }
-  }
-  &.owl-carousel-testimonial {
-    .owl-dots {
-      text-align: left;
-      .owl-dot {
-        span {
-          width: 10px;
-          height: 10px;
-          margin: 5px 7px;
-          background: transparent;
-          border: 1px solid $testimonial-nav-color;
-        }
-        &.active,
-        &:hover {
-          span {
-            background: $testimonial-nav-color;
-          }
-        }
-      }
-    }
-  }
-}
+/*! purgecss end ignore */

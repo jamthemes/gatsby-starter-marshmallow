@@ -1,9 +1,8 @@
 import React, { useEffect } from "react"
 import { Helmet } from "react-helmet"
 
-import AOS from "aos"
-import "@mdi/font/css/materialdesignicons.css"
-import "aos/dist/aos.css"
+// import "aos/dist/aos.css"
+// import AOS from "aos"
 
 import "../assets/styles/style.scss"
 import Menu from "../components/Menu"
@@ -17,19 +16,30 @@ import Pricing from "../components/Pricing"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 
+if (typeof window !== "undefined") {
+  require("requestidlecallback-polyfill")
+  window.requestIdleCallback(
+    async () => {
+      // Load non critical CSS/JS here
+      await import("@mdi/font/css/materialdesignicons.css")
+    },
+    { timeout: 1000 }
+  )
+}
+
 export default function Index() {
-  useEffect(() => {
-    ;(async () => {
-      if (typeof window !== undefined) {
-        AOS.init({
-          offset: 0,
-          duration: 400,
-          easing: "ease-in-quad",
-          delay: 100,
-        })
-      }
-    })()
-  }, [])
+  // useEffect(() => {
+  //   ;(async () => {
+  //     if (typeof window !== undefined) {
+  //       AOS.init({
+  //         offset: 0,
+  //         duration: 400,
+  //         easing: "ease-in-quad",
+  //         delay: 100,
+  //       })
+  //     }
+  //   })()
+  // }, [])
 
   return (
     <>

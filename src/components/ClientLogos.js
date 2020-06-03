@@ -23,6 +23,7 @@ export default function ClientLogos() {
                 className="p-2 p-lg-0"
                 data-aos="fade-down"
                 data-aos-offset={-400}
+                loading="lazy"
               />
               <img
                 src={erricson}
@@ -30,6 +31,7 @@ export default function ClientLogos() {
                 className="p-2 p-lg-0"
                 data-aos="fade-up"
                 data-aos-offset={-400}
+                loading="lazy"
               />
               <img
                 src={netflix}
@@ -37,6 +39,7 @@ export default function ClientLogos() {
                 className="p-2 p-lg-0"
                 data-aos="fade-down"
                 data-aos-offset={-400}
+                loading="lazy"
               />
               <img
                 src={instagram}
@@ -44,6 +47,7 @@ export default function ClientLogos() {
                 className="p-2 p-lg-0"
                 data-aos="fade-up"
                 data-aos-offset={-400}
+                loading="lazy"
               />
               <img
                 src={coinbase}
@@ -51,6 +55,7 @@ export default function ClientLogos() {
                 className="p-2 p-lg-0"
                 data-aos="fade-down"
                 data-aos-offset={-400}
+                loading="lazy"
               />
             </div>
           </div>

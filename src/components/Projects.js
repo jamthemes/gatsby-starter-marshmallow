@@ -1,7 +1,7 @@
 import React from "react"
-import Slider from "react-slick"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
+import Slider from "react-slick"
 
 import satisfiedClient from "../assets/images/satisfied-client.svg"
 import finishedProject from "../assets/images/finished-project.svg"
