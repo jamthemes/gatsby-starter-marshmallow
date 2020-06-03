@@ -1,9 +1,8 @@
 {
   "name": "gatsby-starter-marshmallow",
-  "private": true,
-  "description": "Modern landing page template provided by JamThemes.io",
+  "description": "Modern Landing Page template for Gatsby.js provided by JamThemes.io",
   "version": "0.1.0",
-  "author": "jamthemes.io",
+  "author": "JamThemes.io",
   "dependencies": {
     "@mdi/font": "^5.3.45",
     "aos": "^2.3.4",
@@ -32,7 +31,7 @@
     "landing-page",
     "one-page"
   ],
-  "license": "CC",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

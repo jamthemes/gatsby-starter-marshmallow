@@ -18,9 +18,6 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 
 // TODOs:
-// - Lighthouse Score?
-//  - Use Gatsby Image
-// - SCSS Theming?
 // - CMS: Tina, NetlifyCMS, ...
 // - Port to NextJS
 // - Write README
@@ -49,7 +46,11 @@ export default function Index() {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>Marshmallow - GatsbyJS Landing Page</title>
+        <meta
+          name="description"
+          content="Modern GatsbyJS landing page template provided by JamThemes.io"
+        />
+        <title>Marshmallow - A modern GatsbyJS Landing Page</title>
         <link rel="shortcut icon" href="images/favicon.png" />
       </Helmet>
 

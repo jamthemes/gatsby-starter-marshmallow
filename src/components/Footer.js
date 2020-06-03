@@ -113,7 +113,15 @@ export default function Footer() {
             <div className="d-flex align-items-center">
               <img src={logo} alt="logo" className="mr-3" />
               <p className="mb-0 text-small pt-1">
-                © 2019-2020{" "}
+                © {new Date().getFullYear()}{" "}
+                <a
+                  href="https://www.jamthemes.io/"
+                  className="text-white"
+                  target="_blank"
+                >
+                  JamThemes
+                </a>
+                {" & "}
                 <a
                   href="https://www.bootstrapdash.com/"
                   className="text-white"
