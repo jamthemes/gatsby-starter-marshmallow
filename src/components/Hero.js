@@ -13,15 +13,15 @@ export default function Hero() {
                 <div>
                   <div className="banner-title">
                     <h3 className="font-weight-medium">
-                      We Help Power Millions Of Businesses in 100+ Countries
+                      A beatiful Gatsby.js Landing Page template
                     </h3>
                   </div>
                   <p className="mt-3">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    This is the perfect starting point for a website presenting
+                    your awesome project or startup!
                     <br />
-                    Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s,
+                    Gatsby is a free and open source framework based on React
+                    that helps developers build blazing fast websites and apps
                   </p>
                   <button className="btn btn-secondary mt-3">Learn more</button>
                 </div>

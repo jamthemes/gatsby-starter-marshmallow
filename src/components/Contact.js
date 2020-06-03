@@ -35,7 +35,7 @@ export default function Contact() {
           <Fade>
             <div className="col-sm-7">
               <h3 className="font-weight-medium text-dark mt-5 mt-lg-0">
-                Got A Problem
+                We are here for you
               </h3>
               <h5 className="text-dark mb-5">
                 Lorem ipsum dolor sit amet, consectetur pretium

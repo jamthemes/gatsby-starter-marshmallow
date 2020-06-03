@@ -14,9 +14,7 @@ export default function Pricing() {
             <div className="col-sm-12">
               <div className="d-sm-flex justify-content-between align-items-center mb-2">
                 <div>
-                  <h3 className="font-weight-medium text-dark ">
-                    Checkout Pricing Plan
-                  </h3>
+                  <h3 className="font-weight-medium text-dark ">Pricing</h3>
                   <h5 className="text-dark ">
                     Lorem ipsum dolor sit amet, consectetur pretium pretium
                     tempor. Lorem ipsum dolor{" "}

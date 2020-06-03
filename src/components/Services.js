@@ -14,9 +14,9 @@ export default function Services() {
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
-            <h5 className="text-dark">We’re offering</h5>
+            <h5 className="text-dark">Our Features</h5>
             <h3 className="font-weight-medium text-dark mb-5">
-              Creative Digital Agency
+              Fast in every way that matters
             </h3>
           </div>
         </div>

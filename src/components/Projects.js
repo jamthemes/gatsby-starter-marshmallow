@@ -33,7 +33,7 @@ export default function Projects() {
           <div className="col-sm-12">
             <div className="d-sm-flex justify-content-between align-items-center mb-2">
               <h3 className="font-weight-medium text-dark ">
-                Let's See Our Latest Project
+                See what other's have made
               </h3>
               <div>
                 <a href="/" className="btn btn-outline-primary">
@@ -93,9 +93,9 @@ export default function Projects() {
                 />
                 <div>
                   <h4 className="font-weight-bold text-dark mb-0">
-                    <span className="scVal">0</span>%
+                    <span className="scVal">100</span>%
                   </h4>
-                  <h5 className="text-dark mb-0">Satisfied clients</h5>
+                  <h5 className="text-dark mb-0">Serverless</h5>
                 </div>
               </div>
             </Fade>
@@ -110,7 +110,7 @@ export default function Projects() {
                 />
                 <div>
                   <h4 className="font-weight-bold text-dark mb-0">
-                    <span className="fpVal">0</span>
+                    <span className="fpVal">198</span>
                   </h4>
                   <h5 className="text-dark mb-0">Finished Project</h5>
                 </div>
@@ -123,7 +123,7 @@ export default function Projects() {
                 <img src={teamMembers} alt="Team Members" className="mr-3" />
                 <div>
                   <h4 className="font-weight-bold text-dark mb-0">
-                    <span className="tMVal">0</span>
+                    <span className="tMVal">7</span>
                   </h4>
                   <h5 className="text-dark mb-0">Team Members</h5>
                 </div>
@@ -136,9 +136,9 @@ export default function Projects() {
                 <img src={ourBlogPosts} alt="Our Blog Posts" className="mr-3" />
                 <div>
                   <h4 className="font-weight-bold text-dark mb-0">
-                    <span className="bPVal">0</span>
+                    <span className="bPVal">12</span>
                   </h4>
-                  <h5 className="text-dark mb-0">Our Blog Posts</h5>
+                  <h5 className="text-dark mb-0">Blog Posts</h5>
                 </div>
               </div>
             </Fade>

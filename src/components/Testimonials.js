@@ -37,8 +37,8 @@ export default function Testimonials() {
             <div className="col-sm-6 text-white">
               <p className="font-weight-bold mb-3">Testimonials</p>
               <h3 className="font-weight-medium">
-                Our customers are our <br />
-                biggest fans
+                See what like-minded people <br />
+                are saying
               </h3>
             </div>
           </Fade>

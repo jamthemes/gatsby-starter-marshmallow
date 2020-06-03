@@ -31,10 +31,10 @@ export default function WorkProcess() {
             <div className="col-sm-6" data-aos="fade-up">
               <h5 className="text-dark">Our work process</h5>
               <h3 className="font-weight-medium text-dark">
-                Discover New Idea With Us!
+                Find your place in a crowded market
               </h3>
               <h5 className="text-dark mb-3">
-                Imagination will take us everywhere
+                Imagination can take you anywhere
               </h5>
               <p className="font-weight-medium mb-4">
                 Lorem ipsum dolor sit amet, <br />
