@@ -76,9 +76,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="col-sm-12">
-                  <a href="#" className="btn btn-secondary">
-                    SEND
-                  </a>
+                  <button className="btn btn-secondary">SEND</button>
                 </div>
               </div>
             </form>

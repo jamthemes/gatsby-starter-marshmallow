@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import tick from "../assets/images/tick.png"
-import idea from "../assets/images/idea.png"
 
 export default function WorkProcess() {
   const {

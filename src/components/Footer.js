@@ -56,22 +56,22 @@ export default function Footer() {
                   <h6 className="footer-title">Product</h6>
                   <ul className="list-footer">
                     <li>
-                      <a href="#" className="footer-link">
+                      <a href="/" className="footer-link">
                         Digital Marketing
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="footer-link">
+                      <a href="/" className="footer-link">
                         Web Development
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="footer-link">
+                      <a href="/" className="footer-link">
                         App Development
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="footer-link">
+                      <a href="/" className="footer-link">
                         Design
                       </a>
                     </li>
@@ -81,22 +81,22 @@ export default function Footer() {
                   <h6 className="footer-title">Company</h6>
                   <ul className="list-footer">
                     <li>
-                      <a href="#" className="footer-link">
+                      <a href="/" className="footer-link">
                         Partners
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="footer-link">
+                      <a href="/" className="footer-link">
                         Investors
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="footer-link">
+                      <a href="/" className="footer-link">
                         Partners
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="footer-link">
+                      <a href="/" className="footer-link">
                         FAQ
                       </a>
                     </li>
@@ -118,7 +118,7 @@ export default function Footer() {
                   href="https://www.jamthemes.io/"
                   className="text-white"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   JamThemes
                 </a>
@@ -127,7 +127,7 @@ export default function Footer() {
                   href="https://www.bootstrapdash.com/"
                   className="text-white"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   BootstrapDash
                 </a>
@@ -136,13 +136,13 @@ export default function Footer() {
             </div>
             <div>
               <div className="d-flex">
-                <a href="#" className="text-small text-white mx-2 footer-link">
+                <a href="/" className="text-small text-white mx-2 footer-link">
                   Privacy Policy{" "}
                 </a>
-                <a href="#" className="text-small text-white mx-2 footer-link">
+                <a href="/" className="text-small text-white mx-2 footer-link">
                   Customer Support{" "}
                 </a>
-                <a href="#" className="text-small text-white mx-2 footer-link">
+                <a href="/" className="text-small text-white mx-2 footer-link">
                   Careers{" "}
                 </a>
               </div>
