@@ -18,9 +18,6 @@ export default function NotFound() {
                     Home
                   </Link>
                 </div>
-                {/* <div className="mt-5 mt-lg-0">
-                  <img src={group} alt="marsmello" className="img-fluid" />
-                </div> */}
               </div>
             </div>
           </div>
