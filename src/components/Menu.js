@@ -10,6 +10,10 @@ export default function Menu() {
     setShow(!show)
   }
 
+  function onNavigate() {
+    setShow(false)
+  }
+
   return (
     <div className={show ? "sidebar-overlay" : ""}>
       <div id="mobile-menu-overlay" />
@@ -37,7 +41,7 @@ export default function Menu() {
               </button>
             </div>
             <ul className="navbar-nav ml-auto align-items-center">
-              <NavItems />
+              <NavItems onNavigate={onNavigate} />
             </ul>
           </div>
         </div>
